@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 50%;
+  left: 20;
+  right: 20;
+  background-color: black;
+  overflow: hidden;
+  width: 50%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<center><img src="kriya.jpg" width="90" height="50"></center>
+<body background="bggg.jpg">
+
+
+<center><div class="container">
+ <img src="pada.jpg" alt="Avatar" class="image">
+
+  <div class="overlay">
+    <div class="text">Padangusthasana</div>
+
+  </div>
+</div></center>
+
+<center><div class="container">
+  <img src="bound-angle-pose-baddha-konasana.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Baddha Konasana</div>
+  </div>
+</div></center>
+
+
+<center><div class="container">
+  <img src="catpose.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Marjaryasana</div>
+  </div>
+</div></center>
+ 
+</body>
+</html>
